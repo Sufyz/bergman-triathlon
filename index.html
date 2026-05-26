@@ -1240,7 +1240,7 @@ function openSessModal(sp){
   if(!data)return;
   const wos=data[phase]||data.p1;
   const sc=SP_COL[sp];
-  document.getElementById('sessModalTitle').textContent=sp.toUpperCase()+' — Today's Workout';
+  document.getElementById('sessModalTitle').textContent=sp.toUpperCase()+' — Today\u2019s Workout';
   document.getElementById('sessModalTitle').style.color=sc.t;
   document.getElementById('sessModalTip').textContent=data.tip;
   document.getElementById('sessModalBody').innerHTML=wos.map(w=>`
